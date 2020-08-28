@@ -1,0 +1,30 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Cats Home Jungle</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isHome}}
+          <li class="active"><a href="/">О нас</a></li>
+        {{else}}
+          <li><a href="/">О нас</a></li>
+        {{/if}}
+
+        {{#if isProducts}}
+          <li class="active"><a href="/products">Каталог товаров</a></li>
+        {{else}}
+          <li><a href="/products">Каталог товаров</a></li>
+        {{/if}}
+
+        {{#if isAdd}}
+          <li class="active"><a href="/add">Добавить товар</a></li>
+        {{else}}
+          <li><a href="/add">Добавить товар</a></li>
+        {{/if}}
+
+        {{#if isCart}}
+          <li class="active"><a href="/cart">Корзина</a></li>
+        {{else}}
+          <li><a href="/cart">Корзина</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
